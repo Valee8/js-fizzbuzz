@@ -16,3 +16,10 @@ body {
     margin: 0 auto;
     width: 60%;
 }
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    padding: 40px 0;
+}
