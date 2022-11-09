@@ -23,3 +23,25 @@ h1 {
     font-size: 4rem;
     padding: 40px 0;
 }
+
+.container > .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 7 - 20px);
+    height: calc(100vw / 14);
+    background-color: #1389B2;
+    margin: 10px;
+}
+
+.square.fizz {
+    background-color: #0CD6A1;
+}
+
+.square.buzz {
+    background-color: #FFD166;
+}
+
+.square.fizzbuzz {
+    background-color: #F0466F;
+}
