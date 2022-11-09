@@ -9,9 +9,6 @@ for (let i = 1; i <= 100; i++) {
     // Creo i div che formeranno i quadrati
     const div = document.createElement("div");
 
-    // Aggiungo i numeri ai div
-    div.append(i);
-
     // Creo la classe square per i div
     div.classList.add("square");
 
@@ -22,7 +19,7 @@ for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
 
         // Sostituisco la scritta fizzbuzz al numero
-        div.innerHTML = "fizzbuzz";
+        div.append("fizzbuzz");
 
         // Aggiungo classe fizzbuzz a square
         div.classList.add("fizzbuzz");
@@ -31,7 +28,7 @@ for (let i = 1; i <= 100; i++) {
     else if (i % 3 === 0) {
 
         // Sostituisco la scritta fizz al numero
-        div.innerHTML = "fizz";
+        div.append("fizz");
 
         // Aggiungo classe fizz a square
         div.classList.add("fizz");
@@ -40,10 +37,15 @@ for (let i = 1; i <= 100; i++) {
     else if (i % 5 === 0) {
 
         // Sostituisco la scritta buzz al numero
-        div.innerHTML = "buzz";
+        div.append("buzz");
         
         // Aggiungo classe buzz a square
         div.classList.add("buzz");
+    }
+    // In tutti gli altri casi
+    else {
+        // Aggiungo i numeri ai div
+        div.append(i);
     }
 
 }
