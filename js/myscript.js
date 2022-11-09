@@ -18,4 +18,32 @@ for (let i = 1; i <= 100; i++) {
     // Aggiungo al container i div
     container.append(div);
 
+    // Se sono multipli sia di 3 sia di 5
+    if (i % 3 === 0 && i % 5 === 0) {
+
+        // Sostituisco la scritta fizzbuzz al numero
+        div.innerHTML = "fizzbuzz";
+
+        // Aggiungo classe fizzbuzz a square
+        div.classList.add("fizzbuzz");
+    }
+    // Se sono solo multipli di 3
+    else if (i % 3 === 0) {
+
+        // Sostituisco la scritta fizz al numero
+        div.innerHTML = "fizz";
+
+        // Aggiungo classe fizz a square
+        div.classList.add("fizz");
+    }
+    // Se sono solo multipli di 5
+    else if (i % 5 === 0) {
+
+        // Sostituisco la scritta buzz al numero
+        div.innerHTML = "buzz";
+        
+        // Aggiungo classe buzz a square
+        div.classList.add("buzz");
+    }
+
 }
