@@ -29,7 +29,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width: calc(100% / 7 - 20px);
-    height: calc(100vw / 14);
+    height: calc(100vw / 15);
     background-color: #1389B2;
     margin: 10px;
 }
